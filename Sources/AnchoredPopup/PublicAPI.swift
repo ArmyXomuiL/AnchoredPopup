@@ -9,6 +9,7 @@ import SwiftUI
 
 // - MARK: Popup creation
 
+@available(iOS 15, *)
 public extension View {
     func useAsPopupAnchor<V: View>(id: String, @ViewBuilder contentBuilder: @escaping () -> V, customize: @escaping (PopupParameters) -> PopupParameters) -> some View {
         self.modifier(TriggerButton(id: id, params: customize(PopupParameters()), contentBuilder: contentBuilder))

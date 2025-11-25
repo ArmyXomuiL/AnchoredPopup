@@ -135,6 +135,7 @@ class AnchoredAnimationManager: ObservableObject {
     }
 }
 
+@available(iOS 15, *)
 struct TriggerButton<V>: ViewModifier where V: View {
     @State var id: String
     var params: PopupParameters
@@ -188,6 +189,7 @@ struct TriggerButton<V>: ViewModifier where V: View {
 }
 
 @MainActor
+@available(iOS 14, *)
 fileprivate struct AnchoredAnimationView<V>: View where V: View {
     var id: String
     var params: PopupParameters

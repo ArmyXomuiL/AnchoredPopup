@@ -31,6 +31,7 @@ struct ButtonFramePreferenceKey: PreferenceKey {
 
 // MARK: - AnimatedBackgroundView
 
+@available(iOS 14, *)
 struct AnimatedBackgroundView: View {
     @Binding var id: String
     var background: AnchoredPopupBackground
